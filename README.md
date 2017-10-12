@@ -70,7 +70,9 @@ from the SD card as well (stored in Unix file fo
 rmat newline=\n). Forth scripts can also access ports. 
 You can set a port pin by using word ‘DigitalOut’ which expects port position in Top of stack and port 
 digital value next in stack. This word internally uses object of type DigitalOut.  
-The set up: 
+
+
+###The set up: 
 ![Block dia](/doc/block.png?raw=true "block view of system")
 The hardware consists of a mbed module, an LCD, a touch screen controller, a SD card holder and a 
 few other components.The LCD module is based on ili931 controller. 16-bit RGB data format is used 
@@ -113,4 +115,6 @@ the callback words. The mainloop can be exited using the word “exit_ml” whic
 of definition “exit_loop” word. Hence clicking on “Exit” button would cause the execution to come out of
 mainloop and enter into interactive mode. Below is a picture of the LCD displaying the GUI elements
 as described in the script above.
+
+
 ![GUI example](/doc/gui1.png?raw=true "GUI example")
