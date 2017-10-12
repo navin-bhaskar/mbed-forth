@@ -71,14 +71,14 @@ rmat newline=\n). Forth scripts can also access ports.
 You can set a port pin by using word ‘DigitalOut’ which expects port position in Top of stack and port 
 digital value next in stack. This word internally uses object of type DigitalOut.  
 
-
-###The set up: 
-![Block dia](/doc/block.png?raw=true "block view of system")
+### The set up: 
 The hardware consists of a mbed module, an LCD, a touch screen controller, a SD card holder and a 
 few other components.The LCD module is based on ili931 controller. 16-bit RGB data format is used 
 for drawing images on the LCD. All the functions related to LCD can be found in lcd.c file under the 
 'GUI' folder. The drawing to LCD happens in non buffered mode. The SD card is used to store Forth 
 scripts which can be loaded and executed.
+
+![Block dia](/doc/block.png?raw=true "block view of system")
 
 ### Usage:
 Let us start with the simple hello world program. Lets define a word called hello-world which will output
